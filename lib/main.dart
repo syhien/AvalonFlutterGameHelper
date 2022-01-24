@@ -76,7 +76,7 @@ class _InputPageState extends State<InputPage> {
           child: const Icon(Icons.games),
           onPressed: () async {
             var dio = Dio();
-            var response = await dio.post('http://syh1en.asia/',
+            var response = await dio.post('http://127.0.0.1:9876/',
                 data: {
                   'PlayersNumber': allPlayersController.text,
                   'GameNumber': gameNumberController.text,
