@@ -11,7 +11,10 @@ class AvalonApp extends StatelessWidget {
     return MaterialApp(
       title: 'Avalon',
       home: const InputPage(),
-      theme: ThemeData(brightness: Brightness.dark, primaryColor: Colors.black),
+      theme: ThemeData(
+          brightness: Brightness.dark,
+          primaryColor: Colors.black,
+          fontFamily: 'HarmonyOS_Sans'),
     );
   }
 }
@@ -76,7 +79,7 @@ class _InputPageState extends State<InputPage> {
           child: const Icon(Icons.games),
           onPressed: () async {
             var dio = Dio();
-            var response = await dio.post('http://127.0.0.1:9876/',
+            var response = await dio.post('http://81.69.23.94:8080/',
                 data: {
                   'PlayersNumber': allPlayersController.text,
                   'GameNumber': gameNumberController.text,
@@ -161,7 +164,7 @@ class IdentityPage extends StatelessWidget {
             child: Center(
                 child: Image.asset(
               'images/' + identity + '.jpg',
-              width: 350,
+              width: 300,
             )),
           ),
           Padding(
@@ -177,7 +180,7 @@ class IdentityPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
               identitiesHintMap[identity]!,
-              style: const TextStyle(fontSize: 25),
+              style: const TextStyle(fontSize: 20),
             ),
           )
         ],

@@ -43,20 +43,6 @@ packages:
       url: "https://mirror.sjtu.edu.cn/dart-pub/"
     source: hosted
     version: "1.15.0"
-  convert:
-    dependency: "direct main"
-    description:
-      name: convert
-      url: "https://mirror.sjtu.edu.cn/dart-pub/"
-    source: hosted
-    version: "3.0.1"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://mirror.sjtu.edu.cn/dart-pub/"
-    source: hosted
-    version: "1.0.4"
   dio:
     dependency: "direct main"
     description:
@@ -88,13 +74,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  http:
-    dependency: "direct main"
-    description:
-      name: http
-      url: "https://mirror.sjtu.edu.cn/dart-pub/"
-    source: hosted
-    version: "0.13.4"
   http_parser:
     dependency: transitive
     description:
